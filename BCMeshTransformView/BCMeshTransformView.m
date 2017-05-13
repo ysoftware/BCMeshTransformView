@@ -120,6 +120,10 @@
     self.meshTransform = [BCMutableMeshTransform identityMeshTransformWithNumberOfRows:1 numberOfColumns:1];
 }
 
+-(void)dealloc {
+    [_displayLink invalidate];
+}
+
 - (void)layoutSubviews
 {
     [super layoutSubviews];
