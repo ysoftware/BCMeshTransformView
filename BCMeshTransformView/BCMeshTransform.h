@@ -64,8 +64,8 @@ extern NSString * const kBCDepthNormalizationAverage;
 
 
 @interface BCMutableMeshTransform : BCMeshTransform
-
-@dynamic depthNormalization;
+    
+@property (nonatomic, copy) NSString *depthNormalization;
 
 + (instancetype)meshTransform;
 
