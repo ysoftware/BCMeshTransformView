@@ -12,6 +12,8 @@
 
 @interface BCMeshTransformView : UIView
 
+@property (nonatomic, strong) GLKView *glkView;
+
 // Animatable. Animation won't fire for incompatible mesh transforms.
 // Animation will always begin from current state, even if UIViewAnimationOptionBeginFromCurrentState
 // option is not set. Defaults to identity transform with 4 vertices.
