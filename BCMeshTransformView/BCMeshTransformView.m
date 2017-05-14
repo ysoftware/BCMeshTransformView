@@ -22,8 +22,6 @@
 
 @interface BCMeshTransformView() <GLKViewDelegate>
 
-@property (nonatomic, strong) GLKView *glkView;
-
 @property (nonatomic, strong) BCMeshShader *shader;
 @property (nonatomic, strong) BCMeshBuffer *buffer;
 @property (nonatomic, strong) BCMeshTexture *texture;
